@@ -2,7 +2,7 @@
 
 ## Header
 * Title, logos, names, etc
-  - [ ] Katie prefers to use Kathleen
+  - [x] Katie prefers to use Kathleen
   - Should we include others (Razvan, Dr. Smith, Dr. Mattingly)?
   - Department logos?
     * Does the math department even have one? Doesn't look like it.
