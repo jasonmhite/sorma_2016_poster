@@ -1,0 +1,111 @@
+\documentclass[portrait]{tikzposter} % See Section 3
+
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{cmbright}
+
+\geometry{paperwidth=100cm,paperheight=120cm}
+
+\usetheme{Basic} % See Section 5
+
+\title{\Huge Bayesian Metropolis Techniques for Source Localization} \institute{} % See Section 4.1
+\author{Jason Hite, Kathleen Schmidt}
+
+%\includegraphics[height=6cm]{logo/ncsu/ncstate-brick-4x1-red-cmyk}%
+%\includegraphics[height=6cm]{logo/cnec}%
+
+%\titlegraphic{\includegraphics[width=0.5\textwidth, height=5cm]{logo/dummy}}
+
+\tikzposterlatexaffectionproofoff
+
+\settitle{
+    \vspace{-2cm}
+    \centering
+    \@titlegraphic
+    \vspace{0.1cm}
+    {\fontsize{100}{120}\selectfont \textbf{Bayesian Metropolis Techniques for Source Localization}} \\
+    \vspace{0.6cm}
+    {\Huge \textit{Jason Hite, Katie Schmidt}}
+    \vspace{-2cm}
+}
+
+\usetitlestyle{Wave}
+
+\definecolor{ncsured}{HTML}{CC0000}
+
+\definecolorstyle{basicColorStyle}{
+    \definecolor{colorOne}{named}{white}
+    \definecolor{colorTwo}{named}{ncsured}
+}{
+    % Background Colors
+    \colorlet{backgroundcolor}{colorOne}
+    \colorlet{framecolor}{black}
+    % Title Colors
+    \colorlet{titlefgcolor}{black}
+    \colorlet{titlebgcolor}{colorOne}
+    % Block Colors
+    \colorlet{blocktitlebgcolor}{ncsured}
+    \colorlet{blocktitlefgcolor}{white}
+    \colorlet{blockbodybgcolor}{white}
+    \colorlet{blockbodyfgcolor}{black}
+    % Innerblock Colors
+    \colorlet{innerblocktitlebgcolor}{white}
+    \colorlet{innerblocktitlefgcolor}{black}
+    \colorlet{innerblockbodybgcolor}{colorOne!30!white}
+    \colorlet{innerblockbodyfgcolor}{black}
+    % Note colors
+    \colorlet{notefgcolor}{black}
+    \colorlet{notebgcolor}{colorOne!50!white}
+    \colorlet{noteframecolor}{colorTwo}
+}
+
+\definecolorstyle{titleColorStyle}{
+    \definecolor{colorOne}{named}{white}
+    \definecolor{colorTwo}{named}{ncsured}
+}{
+    % Background Colors
+    \colorlet{backgroundcolor}{colorOne}
+    \colorlet{framecolor}{black}
+    % Title Colors
+    \colorlet{titlefgcolor}{black}
+    \colorlet{titlebgcolor}{white}
+    % Block Colors
+    \colorlet{blocktitlebgcolor}{white}
+    \colorlet{blocktitlefgcolor}{black}
+    \colorlet{blockbodybgcolor}{white}
+    \colorlet{blockbodyfgcolor}{black}
+    % Innerblock Colors
+    \colorlet{innerblocktitlebgcolor}{white}
+    \colorlet{innerblocktitlefgcolor}{black}
+    \colorlet{innerblockbodybgcolor}{colorOne!30!white}
+    \colorlet{innerblockbodyfgcolor}{black}
+    % Note colors
+    \colorlet{notefgcolor}{black}
+    \colorlet{notebgcolor}{colorOne!50!white}
+    \colorlet{noteframecolor}{colorTwo}
+} 
+
+\usecolorstyle{basicColorStyle}
+
+\titlegraphic{\includegraphics{logo/header}}
+
+%\settitle{
+    %\centering
+    %\includegraphics[]{logo/header}
+%}
+
+\begin{document}
+\usecolorstyle{titleColorStyle}
+\maketitle % See Section 4.1
+\usecolorstyle{basicColorStyle}
+
+\block{BlocktitleA}{Blocktext} % See Section 4.2
+\begin{columns} % See Section 4.4
+\column{0.3} % See Section 4.4
+\block{BlocktitleB}{Blocktext}
+\column{0.7}
+\block{BlocktitleC}{Blocktext}
+\note{Notetext} % See Section 4.3
+\end{columns}
+
+\end{document}
