@@ -2,11 +2,13 @@
 
 ## Header
 * Title, logos, names, etc
-  - Katie prefers to use Kathleen
+  - [ ] Katie prefers to use Kathleen
   - Should we include others (Razvan, Dr. Smith, Dr. Mattingly)?
   - Department logos?
     * Does the math department even have one? Doesn't look like it.
     * I think adding them will be cluttered anyhow and it's a pain.
+* I can make the header smaller if we are desperate for space, I just made it pretty
+  to start out.
 
 ## Left column
 
